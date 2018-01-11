@@ -1,0 +1,19 @@
+html {
+    font-size: 62.5%; //reset REMS, to 10px = 1rem;
+    font-family: $fontfamily-primary;
+}
+
+body {
+    font-size: $fontSize-default;
+}
+
+.heading {
+    &--primary {
+        text-align: left;
+        font-size: 6rem;
+        color: white;
+        &-sub {
+            font-size: 5.5rem;
+        }
+    }
+}

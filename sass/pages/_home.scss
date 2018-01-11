@@ -1,0 +1,16 @@
+body {
+    //background-color: $color-gray-background;
+    overflow: auto; //ensure no scrollbar 
+}
+
+.active {
+    display: block;
+    visibility: visible;
+}
+
+.header {
+    height: 95vh;
+    position: relative; //z-index:1;
+    background-color: rgba($color-primary, .5);
+    padding: 10rem 0; //background-color:rgba($color-primary-dark,.5);
+}
