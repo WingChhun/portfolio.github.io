@@ -31,7 +31,7 @@ html {
   box-sizing: border-box; }
 
 .row {
-  max-width: 120rem;
+  max-width: 140rem;
   margin: 0 auto;
   /*
    //900 PX
@@ -148,7 +148,7 @@ body {
     border-bottom: 0.5rem solid #3CBBB1; }
 
 .u-max-width {
-  max-width: 120rem; }
+  max-width: 140rem; }
 
 .u-color-primary {
   color: #3CBBB1; }
@@ -320,13 +320,13 @@ body {
   background-size: cover;
   background-position: no-repeat; }
   .card__img--1 {
-    background-image: linear-gradient(to bottom, rgba(238, 66, 102, 0.4), rgba(238, 66, 102, 0.4)), url("/public/img/bg-webdev.jpg"); }
+    background-image: linear-gradient(to bottom, rgba(238, 66, 102, 0.4), rgba(238, 66, 102, 0.4)), url("../img/bg-webdev.jpg"); }
   .card__img--2 {
-    background-image: linear-gradient(to bottom, rgba(42, 30, 92, 0.4), rgba(42, 30, 92, 0.4)), url("/public/img/bg-webdesign.jpg"); }
+    background-image: linear-gradient(to bottom, rgba(42, 30, 92, 0.4), rgba(42, 30, 92, 0.4)), url("../img/bg-webdesign.jpg"); }
   .card__img--3 {
-    background-image: linear-gradient(to bottom, rgba(255, 119, 0, 0.4), rgba(255, 119, 0, 0.4)), url("/public/img/bg-ux.jpg"); }
+    background-image: linear-gradient(to bottom, rgba(255, 119, 0, 0.4), rgba(255, 119, 0, 0.4)), url("../img/bg-ux.jpg"); }
   .card__img--4 {
-    background-image: linear-gradient(to bottom, rgba(60, 187, 177, 0.4), rgba(60, 187, 177, 0.4)), url("/public/img/bg-responsive.jpg"); }
+    background-image: linear-gradient(to bottom, rgba(60, 187, 177, 0.4), rgba(60, 187, 177, 0.4)), url("../img/bg-responsive.jpg"); }
 
 .card__text-container {
   background-color: white;
@@ -374,7 +374,7 @@ body {
 .about {
   padding: 1rem;
   height: 800px;
-  max-width: 120rem;
+  max-width: 140rem;
   margin: 8rem auto; }
   .about__column--1 {
     box-shadow: 0.05rem 1.5rem 2.5rem rgba(0, 0, 0, 0.4);
