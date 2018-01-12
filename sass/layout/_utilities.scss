@@ -18,5 +18,36 @@
 
 .u-color-underline {
     padding-bottom: 1rem;
-    border-bottom: 2.5rem solid $color-secondary;
+    border-bottom: .5rem solid $color-secondary;
+&--2
+{
+    padding-bottom:1rem;
+    border-bottom:.5rem solid $color-primary;
+}
+}
+
+.u-max-width {
+    max-width: $grid-width;
+}
+
+.u-color-primary {
+    color: $color-primary;
+}
+
+.u-color-secondary {
+    color: $color-secondary;
+}
+.u-text-align-center
+{
+    text-align: center;
+}
+.u-break
+{
+    border:2px solid $color-secondary;
+
+    background-color:$color-secondary;
+    display:block;
+    width:100%;
+   
+    
 }

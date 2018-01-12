@@ -1,0 +1,57 @@
+.nav {
+    height: 7.5rem;
+    background-color: $color-background-black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .8rem 2.4rem;
+    justify-content: space-between;
+    max-width: 100vw;
+    width:100%;
+    border-bottom: 5px solid $color-primary;
+    &__logo-container {}
+    &__navigation-container {
+        width: 50%;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; //border: $border-test;
+    }
+    &__download-container {
+        //border: $border-test;
+        width: 50%;
+        display: flex;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: space-between;
+        list-style: none;
+    }
+    &__item {
+        flex: 1 0 12.5%;
+        min-width: 10%;
+        & a {
+            text-decoration: none;
+            font-size: 2rem;
+            letter-spacing: .1rem;
+            color: $color-primary;
+            padding: 1rem 1.3rem;
+            transition: all .4s ease; //    border: $border-test;
+            &:hover {
+                color: $color-tertiary;
+            }
+        }
+        & a .fa-code {
+            font-size: 200%;
+            margin: 0 auto;
+            text-align: center;
+            color: $color-primary;
+            height: 5rem;
+            width: 6rem;
+            border: 2px solid $color-background-gray;
+        }
+        &--2 {
+            flex: 1 0 100%;
+        }
+    }
+}

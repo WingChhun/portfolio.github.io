@@ -11,6 +11,31 @@ body {
 .header {
     height: 95vh;
     position: relative; //z-index:1;
-    background-color: rgba($color-primary, .5);
+    background-color: rgba($color-primary, .8);
     padding: 10rem 0; //background-color:rgba($color-primary-dark,.5);
+}
+
+[class^=section-] {
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; //background-color: $color-gray-default;
+    padding: 12rem 0;
+    /*
+    @include respond(phone-large) {
+        padding: 10rem 0;
+    }
+    @include respond(phone) {
+        padding: 5rem 0;
+    }*/
+}
+
+.section-services {
+    min-height: 600px;
+    text-align: center;
+}
+.section-about
+{
+    min-height:800px;
+    
 }
