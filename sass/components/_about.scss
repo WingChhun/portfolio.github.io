@@ -1,18 +1,16 @@
 .about {
     padding: 1rem;
-    height: 800px; //border: $border-test;
+    height: 775px; //border: $border-test;
     max-width: $grid-width;
-    margin: 8rem auto;
+    margin: 6rem auto;
     &__column {
         &--1 {
             box-shadow: $box-shadow-secondary;
-            height: 750px;
-
-           
+            height: 775px;
         }
         &--2 {
             box-shadow: $box-shadow-secondary;
-            height: 750px;
+            height: 775px;
         }
     }
     &__profile-container {
@@ -20,19 +18,16 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-        width:90%;
+        width: 90%;
         margin: 0 auto;
         padding: 2.5rem;
-
-
     }
     &__img {
-
         height: 180px;
         width: 180px;
     }
     &__profile-text {
-        width:50%;
+        width: 50%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -60,23 +55,82 @@
     }
     &__skills-item {
         list-style: none;
-        width: 90%;
-        margin: 0 auto;
+        width: 95%;
+        margin: 2.7rem auto;
+        margin-top: 0;
+        &--2 {    
+            
+            padding:1.5rem;
+                box-shadow: $box-shadow-primary;
+            }
     }
     &__skills-group {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 100%;
         margin: .8rem auto;
         align-items: center;
         &--2 {
             //this is for the categories of skills that only have 3 and not 4
             justify-content: space-between;
+        } //FOR OTHER SKILLS
+        &--3 {
+     
+            width: 100%;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            min-height: 400px;
+            max-width: $grid-width;
+      
+        }
+        &--item {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            flex: 1 0 25%;
+            max-width: 33%;
+        
         }
     }
+    &__skills-text {
+        text-align: center;
+        margin: .9rem auto;
+        font-size: 1.8rem;
+        align-self: center;
+        text-transform: capitalize;
+        display: block;
+        font-weight: 600;
+        letter-spacing: .1rem;
+    }
     &__skills-img {
-        height: 90px;
-        max-width: 25%;
+        height: 12rem; //max-width: 100px;
+        flex: 1 0 20%;
+        max-width: 23%;
+        margin: 1rem 0;
+        text-align: center;
+        &:not(:last-child) {
+            margin-right: 2%;
+        }
+        &--2 {
+            flex: 1 0 17.5%;
+            max-width: 17.5%;
+            &:not(:last-child) {
+                margin-right: 2%;
+            }
+        }
+    }
+    &__resp-img {
+        width: 100%;
+        max-width: 10rem;
+        height: 11rem;
+        &--2 {
+            width: 100%;
+            max-width: 9rem;
+            height: 10rem;
+        }
     }
 }

@@ -1,7 +1,7 @@
 //import abstracts
 @import 'abstracts/_mixins.scss';
 @import 'abstracts/_variables.scss';
-@import 'abstracts/_mixins.scss';
+
 //import base
 @import 'layout/_base.scss';
 @import 'layout/_grid.scss';
@@ -14,5 +14,6 @@
 @import 'components/_navigation.scss';
 @import 'components/_card.scss';
 @import 'components/_about.scss';
+@import 'components/_work.scss';
 //Iimport pages
 @import 'pages/_home.scss';
