@@ -39,6 +39,14 @@ body {
         color: $color-background-black;
         letter-spacing: .2rem;
     }
+    &--work {
+        text-align: left;
+        padding-left: 3rem;
+        padding-top: 10px;
+        font-size: 2.2rem;
+        letter-spacing: .1rem;
+        &--2 {}
+    }
 }
 
 //////////
@@ -50,6 +58,26 @@ body {
         font-size: 1.6rem;
         text-align: left;
         line-height: 135%;
+    }
+    &__skill {
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 400;
+        padding: .7rem 1.2rem;
+        letter-spacing: .2rem;
+        border: 2px solid $color-purple;
+        &-text {
+            text-align: center;
+            margin: .9rem auto;
+            font-size: 1.8rem;
+            align-self: center;
+            text-transform: capitalize;
+            display: block;
+            padding: .7rem 1.2rem;
+            font-weight: 400;
+            letter-spacing: .1rem;
+        }
+        &__profile-text {}
     }
 }
 
@@ -98,6 +126,48 @@ body {
         font-weight: 500;
         text-align: left;
     }
+}
+
+//////////////
+//WORK
+.work {
+    &__list-text {
+        font-size: 1.8rem;
+        color: black;
+        font-weight: 300;
+        line-height: 130%;
+        padding: .3rem 0;
+    }
+    &__link {
+        font-size: 4rem;
+    }
+    &__description {
+        text-align: left;
+        color: black;
+        font-size: 1.6rem;
+        line-height: 130%;
+        letter-spacing: .1rem;
+        font-weight: 300;
+        display: block;
+        padding: 1rem 2rem;
+        margin-top: 0;
+    }
+    &__coming-soon {
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        font-size: 2.4rem;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+.work .fa-external-link,
+.work .fa-github {
+    font-size: 4rem;
+    border: 2px solid $color-purple;
+    padding: .8rem 1rem;
+    background-color: rgba($color-background-gray, .9);
+    border-radius: 50%;
 }
 
 //FONT AWESOME

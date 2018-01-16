@@ -1,3 +1,4 @@
+
 .nav {
     height: 7.5rem;
     background-color: $color-background-black;
@@ -7,20 +8,22 @@
     padding: .8rem 2.4rem;
     justify-content: space-between;
     max-width: 100vw;
-    width:100%;
+    margin: 0 auto;
     border-bottom: 5px solid $color-primary;
     &__logo-container {}
     &__navigation-container {
-        width: 50%;
+        width: 40%;
+        margin: 0 auto;
         list-style: none;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center; //border: $border-test;
+        align-items: center;
+        //border: $border-test;
     }
     &__download-container {
-        //border: $border-test;
-        width: 50%;
+        //border: $//border-test;
+        width: 30%;
         display: flex;
         margin: 0 auto;
         text-align: center;
@@ -30,13 +33,14 @@
     &__item {
         flex: 1 0 12.5%;
         min-width: 10%;
+      
         & a {
             text-decoration: none;
             font-size: 2rem;
             letter-spacing: .1rem;
             color: $color-primary;
             padding: 1rem 1.3rem;
-            transition: all .4s ease; //    border: $border-test;
+            transition: all .4s ease; //    //border: $//border-test;
             &:hover {
                 color: $color-tertiary;
             }
@@ -48,7 +52,7 @@
             color: $color-primary;
             height: 5rem;
             width: 6rem;
-            border: 2px solid $color-background-gray;
+            //border: 2px solid $color-background-gray;
         }
         &--2 {
             flex: 1 0 100%;

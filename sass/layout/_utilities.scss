@@ -15,7 +15,11 @@
     font-weight: 700;
     color: $color-secondary;
 }
-
+.u-bold-primary
+{
+    font-weight:70;
+    color:$color-primary;
+}
 .u-color-underline {
     padding-bottom: 1rem;
     border-bottom: .5rem solid $color-secondary;
@@ -41,6 +45,10 @@
 {
     text-align: center;
 }
+.u-text-align-left
+{
+    text-align: left;
+}
 .u-break
 {
     border:2px solid $color-secondary;
@@ -50,4 +58,19 @@
     width:100%;
    
     
+}
+
+.u-col-1-of-2
+{
+    display:inline-block;
+    width:47.5%;
+    margin:0 .75%;
+}
+.u-block
+{
+    display: block;
+}
+.u-m-t-none
+{
+    margin-top:0;
 }
