@@ -37,18 +37,23 @@ body {
 
 .section-about {
     min-height: 600px;
-margin-bottom:0;
+    margin-bottom: 0;
 }
 
 .section-work {
     margin-top: -25rem;
     padding: 3rem 0;
     min-height: 900px;
-
-    background-color:$color-background-gray;
 }
-.section-contact
+
+.section-contact {
+    min-height: 600px;
+    padding: 7rem 0;
+    text-align: center;
+}
+.footer
 {
-    min-height:600px;
-    padding:7rem 0;
+    height:300px;
+    position:relative;
+    background-color:$color-background-black;
 }

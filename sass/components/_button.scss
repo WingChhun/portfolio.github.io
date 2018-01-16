@@ -34,6 +34,11 @@
         align-self: center;
         transition: all .4s ease;
         font-weight: 700;
+        &--2
+        {
+            color:black;
+            border-radius:0;
+        }
         & .fa-download {
             padding-right:1rem;
         }
