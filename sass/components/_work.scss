@@ -26,6 +26,8 @@
         font-size: 2rem;
         transition: .3s ease-out;
         border: 3px solid $color-purple;
+        opacity:0;
+        -webkit-animation-duration:.8s ease;
         @include respond(tab-port) {
             flex: 1 0 25%;
             max-width: 25%;
@@ -64,6 +66,8 @@
             position: relative;
             height: 425px;
             box-shadow: $box-shadow-primary;
+            opacity:0;
+            -webkit-animation-duration:.8s ease;
             @include respond(tab-port) {
                 max-width: 47.5%;
                 flex: 1 0 47.5%;

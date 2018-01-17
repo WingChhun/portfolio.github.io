@@ -17,12 +17,12 @@
 @mixin hide {
     display: none;
     visibility: hidden;
-    opacity:0;
+    opacity: 0;
 }
 
 @mixin active {
     display: block;
-    opacity:1;
+    opacity: 1;
     visibility: visible;
 }
 
@@ -54,12 +54,11 @@ MEDIA QUERIES MIXINS
         }
         ; //480PX
     }
-    @if $breakpoint == phone-landscape
-    {
-        @media only screen and (max-width:46.25em) and (orientation:landscape)
-        {
-@content
-        }; //ORIENTATION LANDSCAPE, max-widthio 680px
+    @if $breakpoint==phone-landscape {
+        @media only screen and (max-width: 46.25em) and (orientation:landscape) {
+            @content
+        }
+        ; //ORIENTATION LANDSCAPE, max-widthio 680px
     }
     @if $breakpoint==phone-large {
         @media only screen and (max-width: 49em) {
@@ -76,8 +75,7 @@ MEDIA QUERIES MIXINS
     @if $breakpoint==tab-port-large {
         @media only screen and (max-width: 65.63em) {
             @content
-        }	
-
+        }
         ; //1050px
     }
     @if $breakpoint==tab-land {

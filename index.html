@@ -16,6 +16,7 @@
     <title>James Chhun | Web Developer</title>
 </head>
 
+<!--loader-->
 
 <header class="header">
     <div class="bg-video">
@@ -39,33 +40,34 @@
         </h1>
         <h1 class="heading--primary"> a Web Developer
         </h1>
-        <a href="# " class="btn btn--main ">View work
+        <a href="#services" class="btn btn--main ">View work
             <i class="fa fa-angle-double-down"></i>
         </a>
     </div>
 </header>
+
 <nav class="nav">
-    <div class="nav__toggle-container">
-        <a href="#" class="nav__toggle">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
+        <div class="nav__toggle-container">
+                <a  class="nav__toggle">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
     <div class="nav__navigation-container">
 
         <li class="nav__item">
             <a href="#">Home</a>
         </li>
         <li class="nav__item">
-            <a href="#">Services</a>
+            <a href="#services">Services</a>
         </li>
         <li class="nav__item">
-            <a href="#">About</a>
+            <a href="#about">About</a>
         </li>
         <li class="nav__item">
-            <a href="#">Work</a>
+            <a href="#work">Work</a>
         </li>
         <li class="nav__item">
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
         </li>
     </div>
     <div class="nav__download-container">
@@ -79,7 +81,8 @@
 </nav>
 
 <main>
-    <section class="section-services">
+        <div class="loader"></div>
+    <section class="section-services" id="services">
         <h2 class="heading--sub u-margin-bottom-large">
             <span class="u-color-underline ">Services</span>
         </h2>
@@ -166,7 +169,7 @@
             <!-- end col-->
     </section>
     <!-- end section-services -->
-    <section class="section-about">
+    <section class="section-about" id="about">
         <h2 class="heading--sub">
             <span class="u-color-underline">About</span>
         </h2>
@@ -354,7 +357,7 @@
         </div>
     </section>
     <!-- end section-about-->
-    <section class="section-work">
+    <section class="section-work"id="work">
         <h2 class="heading--sub">
             <span class="u-color-underline">
                 Work &amp; Projects</span>
@@ -406,9 +409,9 @@
                         <h2 class="heading--work u-block u-m-t-none">GlamourByCherry</h2>
 
 
-               
-                            <i class="fa fa-ellipsis-v"></i>
-                    
+
+                        <i class="fa fa-ellipsis-v"></i>
+
                         <p class="work__description">
                             Portfolio site created for a makeup artist based in San Diego.
                         </p>
@@ -807,7 +810,7 @@
         </div>
     </section>
     <!-- end section-work -->
-    <section class="section-contact">
+    <section class="section-contact"id="contact">
         <h2 class="heading--sub">
             <span class="u-color-underline">Contact</span>
             <p class="contact__under-header">Have a question or want to work together?</p>
@@ -853,6 +856,8 @@
 <!-- include scripts -->
 <script src="/public/vendors/js/jquery-3.2.1.min.js"></script>
 <script src="/public/vendors/js/jquery.waypoints.min.js"></script>
-<script src="/public/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-localScroll/2.0.0/jquery.localScroll.min.js"></script>
+<script src="public/js/main.js"></script>
 
 </html>

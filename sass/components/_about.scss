@@ -10,19 +10,26 @@
         //for other ksills
         min-height: 300px;
         margin: 3rem auto;
+      opacity:0;
         @include respond(phone) {
             min-height: 500px;
-         margin-top:55rem;
+            margin-top: 55rem;
         }
     }
     &__column {
         &--1 {
             //box-shadow: $//box-shadow-secondary;
             height: 775px;
+            -webkit-animation-duration: .6s ease;
+            @include respond(phone-large)
+            {
+                margin-bottom:4rem;
+            }
         }
         &--2 {
             //box-shadow: $//box-shadow-secondary;
             height: 775px;
+            -webkit-animation-duration: .6s ease;
         }
     }
     &__profile-container {
@@ -93,7 +100,6 @@
         width: 95%;
         margin: 2.7rem auto;
         margin-top: 0;
-     
         @include respond(phone) {
             min-height: 270px;
         }
@@ -125,13 +131,10 @@
             width: 100%;
             justify-content: space-between;
             flex-wrap: wrap;
-            
             min-height: 175px;
             max-width: $grid-width;
-            @include respond(phone)
-            {
-                
-                min-height:200px;
+            @include respond(phone) {
+                min-height: 200px;
             }
         }
         &--item {
@@ -149,17 +152,15 @@
         min-width: 15%;
         margin: 0;
         max-width: 15%;
-        @include respond(phone)
-        {
-            max-width:45%;
-            flex:1 0 40%;
-            margin:2rem 5%;
+        @include respond(phone) {
+            max-width: 45%;
+            flex: 1 0 40%;
+            margin: 2rem 5%;
         }
-        @include respond(phone-landscape)
-        {
-            max-width:45%;
-            flex:1 0 40%;
-            margin:2rem 5%;
+        @include respond(phone-landscape) {
+            max-width: 45%;
+            flex: 1 0 40%;
+            margin: 2rem 5%;
         }
     }
     &__skills-img {

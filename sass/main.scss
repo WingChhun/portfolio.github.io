@@ -1,7 +1,8 @@
 //import abstracts
 @import 'abstracts/_mixins.scss';
 @import 'abstracts/_variables.scss';
-
+@import 'abstracts/_animate.scss';
+@import 'abstracts/_loader.scss';
 //import base
 @import 'layout/_base.scss';
 @import 'layout/_grid.scss';

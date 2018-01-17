@@ -9,34 +9,44 @@
     max-width: 100vw;
     margin: 0 auto;
     border-bottom: 5px solid $color-primary; //ALIGN HAMBURGER MENU MIDDLE
+    transition: all .7s ease;
     @include respond(phone-large) {
         justify-content: center;
         flex-direction: column;
         height: auto;
-    }
+        padding: 0;
+        background-color: transparent;
+        border-bottom:none;
+    } //TOGGLE
     &__toggle-container {
         color: white;
+        text-align: center;
         align-self: center;
+        justify-content: center;
+        height: 7.5rem;
+        background-color: $color-background-black;
         @include hide; //hide
         @include respond(phone-large) {
-            display: block;
-            visibility: visible;
+            @include active;
+            opacity: 1;
+            width: 100vw;
         }
     }
     &__toggle {
         color: white;
         font-size: 5rem;
-        padding: 2rem;
+        align-items: center;
+        padding: 1rem;
         cursor: pointer;
         @include hide; //hide
         @include respond(phone-large) {
-            display: block;
-            visibility: visible;
+            @include active;
+            opacity: 1;
         }
     }
     &__navigation-container {
         width: 70%;
-        padding-top: 2rem;
+        background-color: white;
         margin: 0 auto;
         list-style: none;
         display: flex;
@@ -47,11 +57,13 @@
             width: 60%;
         } //show repsonsive menu
         @include respond(phone-large) {
-            display: none;
+            display: none; //change to flex
             width: 95%;
             flex-direction: column;
-            justify-content: space-around;
-            height: 0; //height: auto;
+            justify-content: center;
+            text-align: center;
+            opacity: 0;
+            -webkit-animation-duration:.8s;
         }
     }
     &__download-container {
@@ -68,8 +80,7 @@
         @include respond(phone-large) {
             width: 95%;
             text-align: center;
-            display: none;
-            height: 0; //height: auto;
+            display: none; //change to flex
         }
     }
     &__item {
@@ -77,13 +88,14 @@
         min-width: 10%;
         @include respond(phone-large) {
             //display: block;
-            width: 70%;
+            width: 100vw;
             text-align: center;
-            padding: 1.25rem 0;
-            border-bottom: 1px solid $color-primary;
-            margin: 2rem auto;
+            border-bottom: 2px solid $color-primary;
+            margin: 0;
+            padding: 2rem 0;
+            background-color: $color-background-black;
             &:last-child {
-                border-bottom: none;
+                
             }
         }
         & a {
@@ -113,4 +125,11 @@
             flex: 1 0 100%;
         }
     }
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1000;
 }

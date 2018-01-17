@@ -1,4 +1,6 @@
 .footer {
+ 
+    -webkit-animation-duration:.8s;
     &__container {
         margin: 0 auto;
         max-width:calc(.8 *#{$grid-width});

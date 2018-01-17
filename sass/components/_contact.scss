@@ -8,7 +8,8 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
- 
+ opacity:0;
+ -webkit-animation-duration: .8s;
     @include respond(tab-port) {
         max-width: $grid-width-med;
     }

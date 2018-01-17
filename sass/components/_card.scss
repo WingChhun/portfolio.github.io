@@ -1,4 +1,7 @@
 .card {
+    opacity:0;
+    -webkit-animation-delay:.1s;
+    -webkit-animation-duration: 1s ease;
     &__shape {
         width: 100%;
         box-shadow: $box-shadow-primary;
