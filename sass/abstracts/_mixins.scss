@@ -17,10 +17,12 @@
 @mixin hide {
     display: none;
     visibility: hidden;
+    opacity:0;
 }
 
 @mixin active {
     display: block;
+    opacity:1;
     visibility: visible;
 }
 

@@ -465,12 +465,26 @@ body {
       height: auto; } }
   .nav__toggle-container {
     color: white;
-    align-self: center; }
+    align-self: center;
+    display: none;
+    visibility: hidden;
+    opacity: 0; }
+    @media only screen and (max-width: 49em) {
+      .nav__toggle-container {
+        display: block;
+        visibility: visible; } }
   .nav__toggle {
     color: white;
-    font-size: 4.5rem;
+    font-size: 5rem;
     padding: 2rem;
-    cursor: pointer; }
+    cursor: pointer;
+    display: none;
+    visibility: hidden;
+    opacity: 0; }
+    @media only screen and (max-width: 49em) {
+      .nav__toggle {
+        display: block;
+        visibility: visible; } }
   .nav__navigation-container {
     width: 70%;
     padding-top: 2rem;
@@ -824,7 +838,8 @@ body {
         max-width: 47.5%;
         padding: 2.5rem auto; } }
     .work__item:hover {
-      background-color: rgba(42, 30, 92, 0.4); }
+      background-color: rgba(60, 187, 177, 0.4);
+      border-color: #3CBBB1; }
     .work__item--active {
       border-color: #3CBBB1;
       background-color: rgba(60, 187, 177, 0.4); }
@@ -878,6 +893,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    display: none;
+    visibility: hidden;
     opacity: 0; }
   .work__img {
     object-fit: cover;
@@ -889,8 +906,10 @@ body {
   .work-fa-close {
     font-size: 240%;
     position: absolute;
-    top: 5%;
-    left: 88%; }
+    top: -1%;
+    left: 83%;
+    cursor: pointer;
+    padding: 1.2rem; }
   .work__overlay-links {
     padding-left: 1rem;
     text-align: left;
@@ -903,10 +922,18 @@ body {
     text-align: center;
     position: relative; }
   .work .fa-ellipsis-v {
-    font-size: 250%;
+    font-size: 200%;
     position: absolute;
-    top: 10%;
-    left: 90%; }
+    padding: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    top: 0%;
+    left: 88%;
+    cursor: pointer;
+    z-index: 2;
+    transition: all .3s ease; }
+    .work .fa-ellipsis-v:hover {
+      transform: scale(1.15); }
 
 .contact {
   height: 500px;

@@ -17,12 +17,22 @@
     &__toggle-container {
         color: white;
         align-self: center;
+        @include hide; //hide
+        @include respond(phone-large) {
+            display: block;
+            visibility: visible;
+        }
     }
     &__toggle {
         color: white;
-        font-size: 4.5rem;
+        font-size: 5rem;
         padding: 2rem;
         cursor: pointer;
+        @include hide; //hide
+        @include respond(phone-large) {
+            display: block;
+            visibility: visible;
+        }
     }
     &__navigation-container {
         width: 70%;
