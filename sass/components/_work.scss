@@ -1,5 +1,4 @@
 .work {
-
     max-width: $grid-width;
     margin: 2rem auto;
     padding: 2rem;
@@ -26,14 +25,29 @@
         letter-spacing: .2rem;
         font-size: 2rem;
         transition: .3s ease-out;
-        border:3px solid $color-purple;
+        border: 3px solid $color-purple;
+        @include respond(tab-port) {
+            flex: 1 0 25%;
+            max-width: 25%;
+            padding: 1.5rem auto;
+            margin: 1.5rem 0;
+        }
+        @include respond(phone) {
+            flex: 1 0 47.5%;
+            max-width: 47.5%;
+            padding: 2.5rem auto;
+        }
+        @include respond(phone-landscape) {
+            flex: 1 0 47.5%;
+            max-width: 47.5%;
+            padding: 2.5rem auto;
+        }
         &:hover {
             background-color: rgba($color-purple, .4);
         }
-        &--active
-        {
-            border-color:$color-primary;
-            background-color:rgba($color-primary,.4);
+        &--active {
+            border-color: $color-primary;
+            background-color: rgba($color-primary, .4);
         }
         &>* {
             //STYLE LINK TANG
@@ -47,7 +61,22 @@
             max-width: 32%;
             margin: 1rem 0;
             position: relative;
-            height: 425px;     box-shadow: $box-shadow-primary;
+            height: 425px;
+            box-shadow: $box-shadow-primary;
+            @include respond(tab-port) {
+                max-width: 47.5%;
+                flex: 1 0 47.5%;
+                margin: 2.5rem 1rem;
+            }
+            @include respond(phone) {
+                max-width: 95%;
+                flex: 1 0 95%;
+            }
+            @include respond(phone-landscape) {
+                max-width: 47.5%;
+                flex: 1 0 47.5%;
+                margin: 2.5rem 1rem;
+            }
         }
     } //////
     //PROJECTS
@@ -58,6 +87,7 @@
         align-items: center;
         min-height: 500px;
         flex-wrap: wrap;
+        @include respond(phone) {}
     } /////////////PROJECTS - IMAGE
     &__img-container {
         height: 250px;
@@ -71,12 +101,11 @@
         height: 425px;
         width: 100%;
         transition: .4s ease;
-      
+        text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-       //control opacity for checking
-        opacity:0;
+        justify-content: space-between; //control opacity for checking
+        opacity: 0;
     }
     &__img {
         object-fit: cover;
@@ -104,11 +133,9 @@
     &__toggle {
         height: 155px;
         padding: 1rem;
-   
         text-align: center;
         position: relative;
     }
- 
     .fa-ellipsis-v {
         font-size: 250%;
         position: absolute;

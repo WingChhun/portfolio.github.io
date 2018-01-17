@@ -3,6 +3,56 @@
         width: 100%;
         box-shadow: $box-shadow-primary;
         height: 49rem; //border: $border-test;
+        @include respond(tab-port-large) {
+            height: 44rem;
+            margin: 2.5rem auto;
+        }
+    }
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        max-width: $grid-width;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        @include respond(tab-port-large) {
+            //adjust for 2 column
+            max-width: $grid-width-med;
+        }
+        @include respond(tab-port) {
+            //880px
+            max-width: $grid-width-med;
+        }
+        @include respond(phone-landscape) {
+            max-width: $grid-width-small;
+        }
+        @include respond(phone) {
+            padding: 0 3rem;
+            max-width: 95%;
+            flex-direction: column;
+        }
+    }
+    &__item {
+        flex: 1 0 25%;
+        min-width: 20%;
+        max-width: 23%;
+        &:not(:last-child) {
+            margin-right: 1.5%;
+        }
+        @include respond(tab-port-large) {
+            //make 2 column
+            flex: 1 0 49%;
+            max-width: 49%;
+            &:not(:last-child) {
+                margin: 0;
+                margin-right: .5%;
+            }
+        }
+        @include respond(phone) {
+            flex: 1 0 90%;
+            max-width: 95%;
+        }
     }
     &__img {
         width: 100%;

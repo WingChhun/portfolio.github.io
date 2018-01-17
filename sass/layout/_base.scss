@@ -1,6 +1,26 @@
-body,
-html {
+
+
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /*
+    @include respond(tab-port) {
+        padding: 0; //remove header apdding at 900 breakpoint
+    }*/
+
+}
+html
+{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+

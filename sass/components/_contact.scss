@@ -5,10 +5,20 @@
     max-width: $grid-width;
     padding: 4rem;
     margin: 0 auto;
-
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+ 
+    @include respond(tab-port) {
+        max-width: $grid-width-med;
+    }
+    @include respond(phone) {
+        max-width: 95%;
+    }
+    @include respond(phone-landscape)
+    {
+        max-width:95%;
+    }
     &__input {
         padding: 1.4rem 2rem;
         font-size: 1.8rem;
@@ -17,6 +27,10 @@
         max-width: 42.5%;
         border: 3px solid $color-primary;
         transition: all .3s ease;
+        @include respond(phone) {
+            flex: 1 0 95%;
+            max-width: 95%;
+        }
         &:focus {
             border: 3px solid $color-tertiary;
             outline: 0;
@@ -35,12 +49,11 @@
             outline: 0;
         }
     }
-    &__under-header
-{
-    padding:1rem;
-    margin-top:4rem;
-    font-size:1.8rem;
-}
+    &__under-header {
+        padding: 1rem;
+        margin-top: 4rem;
+        font-size: 1.8rem;
+    }
 }
 
 .btn--contact {
@@ -60,5 +73,8 @@
         outline: 0;
         border: 3px solid $color-tertiary;
     }
-   
+    @include respond(phone)
+    {
+        max-width:70%;
+    }
 }

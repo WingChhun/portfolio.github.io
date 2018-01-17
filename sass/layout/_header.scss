@@ -1,6 +1,5 @@
 .header {
-    height: 95vh;
-    //background-image: linear-gradient(to right bottom, rgba($color-primary, 0.8), rgba($color-primary, .8)), url("/public/img/bg-code.jpg");
+    min-height: 95vh; //background-image: linear-gradient(to right bottom, rgba($color-primary, 0.8), rgba($color-primary, .8)), url("/public/img/bg-code.jpg");
     background-size: cover;
     background-position: top; //-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     //clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -30,13 +29,27 @@
     }
     &__container {
         @include absCenter; //for laptop
-        transform: translate(-50%, -70%); //border: $border-test;
+        transform: translate(-50%, -55%); //border: $border-test;
         min-height: 50vh;
-        height: 35rem;
+        display:flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: center;
+        min-height: 275px;
+        min-width: 60vw;
         text-align: center;
+       
+        @include respond(tab-port)
+        {
+            min-width:80vw;
+
+        }@include respond(phone)
+        {
+            min-height:200px;
+            width:95%;
+            padding:2rem;
+        }
+      
     }
-    @include respond(phone) {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    }
+
 }

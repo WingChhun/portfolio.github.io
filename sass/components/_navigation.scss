@@ -1,25 +1,48 @@
-
 .nav {
     height: 7.5rem;
     background-color: $color-background-black;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: .8rem 2.4rem;
+    padding: .8rem 4rem;
     justify-content: space-between;
     max-width: 100vw;
     margin: 0 auto;
-    border-bottom: 5px solid $color-primary;
-    &__logo-container {}
+    border-bottom: 5px solid $color-primary; //ALIGN HAMBURGER MENU MIDDLE
+    @include respond(phone-large) {
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+    }
+    &__toggle-container {
+        color: white;
+        align-self: center;
+    }
+    &__toggle {
+        color: white;
+        font-size: 4.5rem;
+        padding: 2rem;
+        cursor: pointer;
+    }
     &__navigation-container {
-        width: 40%;
+        width: 70%;
+        padding-top: 2rem;
         margin: 0 auto;
         list-style: none;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
-        //border: $border-test;
+        align-items: center; //border: $border-test;
+        @include respond(tab-port) {
+            width: 60%;
+        } //show repsonsive menu
+        @include respond(phone-large) {
+            display: none;
+            width: 95%;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 0; //height: auto;
+        }
     }
     &__download-container {
         //border: $//border-test;
@@ -29,20 +52,43 @@
         text-align: center;
         justify-content: space-between;
         list-style: none;
+        @include respond(tab-port) {
+            width: 40%;
+        } //show repsonsive menu
+        @include respond(phone-large) {
+            width: 95%;
+            text-align: center;
+            display: none;
+            height: 0; //height: auto;
+        }
     }
     &__item {
         flex: 1 0 12.5%;
         min-width: 10%;
-      
+        @include respond(phone-large) {
+            //display: block;
+            width: 70%;
+            text-align: center;
+            padding: 1.25rem 0;
+            border-bottom: 1px solid $color-primary;
+            margin: 2rem auto;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
         & a {
             text-decoration: none;
             font-size: 2rem;
             letter-spacing: .1rem;
             color: $color-primary;
-            padding: 1rem 1.3rem;
+            padding: .25rem 1.3rem;
             transition: all .4s ease; //    //border: $//border-test;
             &:hover {
                 color: $color-tertiary;
+            }
+            @include respond(phone-large) {
+                font-size: 2.2rem;
+                padding: 2rem 2.5rem;
             }
         }
         & a .fa-code {
@@ -51,8 +97,7 @@
             text-align: center;
             color: $color-primary;
             height: 5rem;
-            width: 6rem;
-            //border: 2px solid $color-background-gray;
+            width: 6rem; //border: 2px solid $color-background-gray;
         }
         &--2 {
             flex: 1 0 100%;

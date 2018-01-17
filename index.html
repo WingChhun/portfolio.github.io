@@ -10,6 +10,7 @@
     <!-- import icons -->
     <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="public/vendors/css/animate.css">
+
     <link rel="stylesheet" href="public/vendors/css/font-awesome.min.css">
     <link rel="stylesheet" href="public/css/style.css">
     <title>James Chhun | Web Developer</title>
@@ -25,16 +26,18 @@
         </video>
     </div>
     <!-- end bg-video -->
+    <!--
     <div class="header__logo-box">
+       
         <a href="#">
             <i class="fa fa-code"></i>
         </a>
-    </div>
+    </div>-->
     <div class="header__container">
         <h1 class="heading--primary">Hello, I'm
             <span class="u-bold-color">James Chhun</span>
         </h1>
-        <h1 class="heading--primary">a Web Developer
+        <h1 class="heading--primary"> a Web Developer
         </h1>
         <a href="# " class="btn btn--main ">View work
             <i class="fa fa-angle-double-down"></i>
@@ -42,13 +45,12 @@
     </div>
 </header>
 <nav class="nav">
-
+<div class = "nav__toggle-container">
+    <a href = "#" class = "nav__toggle">
+<i class = "fa fa-bars"></i>
+    </a>
+</div>
     <div class="nav__navigation-container">
-        <li class="nav__item">
-            <a href="#">
-                <i class="fa fa-code"></i>
-            </a>
-        </li>
 
         <li class="nav__item">
             <a href="#">Home</a>
@@ -84,9 +86,10 @@
         <br>
         <br>
         <br>
-        <div class="row">
 
-            <div class="col-1-of-4">
+        <div class="card__container">
+
+            <div class="card__item">
                 <div class="card">
                     <figure class="card__shape">
                         <div class="card__img card__img--1"></div>
@@ -105,7 +108,7 @@
                 <!-- end card-->
             </div>
             <!-- end col-->
-            <div class="col-1-of-4">
+            <div class="card__item">
                 <div class="card">
                     <figure class="card__shape">
                         <div class="card__img card__img--2"></div>
@@ -124,7 +127,7 @@
                 <!-- end card-->
             </div>
             <!-- end col-->
-            <div class="col-1-of-4">
+            <div class="card__item">
                 <div class="card">
                     <figure class="card__shape">
                         <div class="card__img card__img--3"></div>
@@ -143,7 +146,7 @@
                 <!-- end card-->
             </div>
             <!-- end col-->
-            <div class="col-1-of-4">
+            <div class="card__item">
                 <div class="card">
                     <figure class="card__shape">
                         <div class="card__img card__img--4"></div>
@@ -297,7 +300,7 @@
         </div>
         <br>
 
-        <div class="about">
+        <div class="about about--2">
             <div class="row">
                 <div class="about__skills-container">
 
@@ -308,6 +311,7 @@
                         <div class="about__skills-group about__skills-group--3">
                             <p class="about__skill">Git</p>
                             <p class="about__skill">Github</p>
+                            <p class="about__skill">NPM</p>
                             <p class="about__skill">Photoshop</p>
                             <p class="about__skill">Heroku</p>
                             <p class="about__skill">Slack</p>
@@ -438,7 +442,7 @@
                         </div>
 
                         <br>
-                        <hr>
+
                         <div class="work__overlay-links">
                             <a href="" class="work__link">
                                 <i class="fa fa-external-link"></i>
@@ -498,7 +502,7 @@
                         </div>
 
                         <br>
-                        <hr>
+
                         <div class="work__overlay-links">
                             <p class="work__coming-soon">In Progress!</p>
                             <!--
@@ -560,7 +564,7 @@
                         </div>
 
                         <br>
-                        <hr>
+
                         <div class="work__overlay-links">
                             <a href="https://yelpcamp-deployed.herokuapp.com" class="work__link">
                                 <i class="fa fa-external-link"></i>
@@ -614,7 +618,7 @@
                         </div>
 
                         <br>
-                        <hr>
+
                         <div class="work__overlay-links">
                             <a href="https://wingchhun.github.io/portfolio.github.io/" class="work__link">
                                 <i class="fa fa-external-link"></i>
@@ -666,7 +670,7 @@
                         </div>
 
                         <br>
-                        <hr>
+
                         <div class="work__overlay-links">
                             <a href="https://wingchhun.github.io/james_portfolio_final.github.io/" class="work__link">
                                 <i class="fa fa-external-link"></i>
@@ -718,7 +722,7 @@
                         </div>
 
                         <br>
-                        <hr>
+
                         <div class="work__overlay-links">
                             <a href="https://wingchhun.github.io/OneTree.github.io/" class="work__link">
                                 <i class="fa fa-external-link"></i>
@@ -810,8 +814,8 @@
         <form action="https://formspree.io/capt.wing.chhun@gmail.com" method="POST" class="contact">
             <input type="text" class="contact__input" name="name" placeholder="Full Name" required>
             <input type="email" class="contact__input" name="Email" placeholder="Email" required>
-           
-            <textarea class="contact__textarea"name = "message"placeholder="Please tell me a little about yourself and how we can work together"></textarea>
+
+            <textarea class="contact__textarea" name="message" placeholder="Please tell me a little about yourself and how we can work together"></textarea>
             <input type="submit" value="Send" class="btn btn--contact">
         </form>
 
@@ -825,22 +829,24 @@
         <i class="fa fa-angle-double-up"></i>
     </a>
     <div class="footer__container">
-        <div class="footer_logo-container">
-            <a target="blank" href="https://www.linkedin.com/in/james-chhun-16b1b5120/" class="footer__logo-img footer__logo-img--1">
-                <i class="fa fa-linkedin-square"></i>
-            </a>
-            <a target="blank" href="https://github.com/WingChhun" class="footer__logo-img footer__logo-img--2">
-                <i class="fa fa-github-square"></i>
-            </a>
-            <a target="blank" href="https://codepen.io/WingChhun/" class="footer__logo-img footer__logo-img--3">
-                <i class="fa fa-codepen"></i>
-            </a>
-            <a target="blank" href="https://www.instagram.com/wingchhun_codes/" class="footer__logo-img footer__logo-img--4">
-                <i class="fa fa-instagram"></i>
-            </a>
-        </div>
+
+        <a target="blank" href="https://www.linkedin.com/in/james-chhun-16b1b5120/" class="footer__logo-img footer__logo-img--1">
+            <i class="fa fa-linkedin-square"></i>
+        </a>
+        <a target="blank" href="https://github.com/WingChhun" class="footer__logo-img footer__logo-img--2">
+            <i class="fa fa-github-square"></i>
+        </a>
+        <a target="blank" href="https://codepen.io/WingChhun/" class="footer__logo-img footer__logo-img--3">
+            <i class="fa fa-codepen"></i>
+        </a>
+        <a target="blank" href="https://www.instagram.com/wingchhun_codes/" class="footer__logo-img footer__logo-img--4">
+            <i class="fa fa-instagram"></i>
+        </a>
+
         <p class="footer__copyright">Designed and Developed by James Chhun, me &copy; 2018</p>
+
     </div>
+    <!-- end footer container-->
 
 </footer>
 <!-- include scripts -->
