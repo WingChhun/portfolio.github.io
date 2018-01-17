@@ -64,7 +64,7 @@ function waypointAnimations() {
     function aboutAnimate() {
         var animate1 = "animated slideInLeft",
             animate2 = "animated slideInRight",
-            animate3 = "animated fadeInUp",
+            animate3 = "animated fadeIn",
             $aboutProfile = $(".about__column--1"),
             $aboutSkills = $(".about__column--2"),
             $aboutExtra = $(".about--2");
@@ -104,7 +104,7 @@ function waypointAnimations() {
     }
 
     function contactAnimate() {
-        var animate1 = "animated bounceIn",
+        var animate1 = "animated fadeIn",
 
             $contact = $(".contact"),
             $footer = $(".footer");
@@ -112,7 +112,7 @@ function waypointAnimations() {
             $contact.addClass(animate1);
 
         }, {
-            offset: "60%"
+            offset: "80%"
         });
     }
 
