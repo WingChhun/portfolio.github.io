@@ -16,7 +16,7 @@
         height: auto;
         padding: 0;
         background-color: transparent;
-        border-bottom:none;
+        border-bottom: none;
     } //TOGGLE
     &__toggle-container {
         color: white;
@@ -46,7 +46,6 @@
     }
     &__navigation-container {
         width: 70%;
-     
         margin: 0 auto;
         list-style: none;
         display: flex;
@@ -63,7 +62,7 @@
             justify-content: center;
             text-align: center;
             opacity: 0;
-            -webkit-animation-duration:.8s;
+            -webkit-animation-duration: .8s;
         }
     }
     &__download-container {
@@ -94,9 +93,7 @@
             margin: 0;
             padding: 2rem 0;
             background-color: $color-background-black;
-            &:last-child {
-                
-            }
+            &:last-child {}
         }
         & a {
             text-decoration: none;

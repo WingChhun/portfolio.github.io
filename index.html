@@ -18,7 +18,7 @@
 
 <!--loader-->
 
-<header class="header" id = "home">
+<header class="header" id="home">
     <div class="bg-video">
         <video class="bg-video__content" autoplay muted loop>
             <source src="public/img/video/video-2.mp4" type="video/mp4"> Your browser is not supported!
@@ -358,51 +358,52 @@
     </section>
     <!-- end section-about-->
     <section class="section-work" id="work">
-        <h2 class="heading--sub">
+        <h2 class="heading--sub  u-margin-bottom-large">
             <span class="u-color-underline">
                 Work &amp; Projects</span>
         </h2>
         <div class="work">
-
+            <!--
             <div class="work__text">
-                <li class="work__item work__item--active">
-                    <a href="#">All</a>
+                <li class="work__item work__item--active" data-filter="all">
+                    <a>All</a>
                 </li>
-                <li class="work__item">
-                    <a href="#">HTML/CSS</a>
+                <li class="work__item" data-filter="html">
+                    <a>HTML/CSS</a>
                 </li>
-                <li class="work__item">
-                    <a href="#">SASS</a>
+                <li class="work__item" data-filter="sass">
+                    <a>SASS</a>
                 </li>
 
-                <li class="work__item">
-                    <a href="#">PSD to HTML</a>
+                <li class="work__item" data-filter="psd">
+                    <a>PSD to HTML</a>
                 </li>
-                <li class="work__item">
-                    <a href="#">Javascript</a>
+                <li class="work__item" data-filter="javascript">
+                    <a>Javascript</a>
                 </li>
-                <li class="work__item">
-                    <a href="#">jQuery</a>
+                <li class="work__item" data-filter="jquery">
+                    <a>jQuery</a>
                 </li>
-                <li class="work__item">
-                    <a href="#">NodeJS</a>
+                <li class="work__item" data-filter="nodejs">
+                    <a>NodeJS</a>
                 </li>
-                <li class="work__item">
-                    <a href="#">MongoDB</a>
+                <li class="work__item" data-filter="mongodb">
+                    <a>MongoDB</a>
                 </li>
-                <li class="work__item">
-                    <a href="#">Angular</a>
+                <li class="work__item" data-filter="angular">
+                    <a>Angular</a>
                 </li>
             </div>
+        -->
             <!-- end work-text-->
 
             <!-- end work-text-container -->
             <div class="work__projects-container">
 
 
-                <div class="work__item--2">
+                <div class="work__item--2" data-filter="all" data-filter2="sass">
                     <div class="work__img-container">
-                        <img src="public/img/work-1.jpg" alt="work-1" class="work__img">
+                        <img src="public/img/glamoru.jpg" alt="work-1" class="work__img">
                     </div>
                     <div class="work__toggle">
 
@@ -410,7 +411,7 @@
 
 
 
-                        <i class="fa fa-ellipsis-v"></i>
+                        <i class="fa fa-ellipsis-v work--toggle" data-show="1"></i>
 
                         <p class="work__description">
                             Portfolio site created for a makeup artist based in San Diego.
@@ -419,8 +420,8 @@
                     </div>
                     <!-- end TOGGLE-->
                     <!-- BEGINNING OVER OVERLAY -->
-                    <div class="work__img-overlay u-text-align-left">
-                        <i class="fa fa-close fa-2x u-bold-color work-fa-close"></i>
+                    <div class="work__img-overlay u-text-align-left" data-show="1">
+                        <i class="fa fa-close fa-2x u-bold-color work-fa-close work--toggle" data-show="1"></i>
                         <h2 class="heading--work">Accomplishments</h2>
                         <div class="work__overlay-accomplishments u-text-align-left">
                             <li class="work__list-text">Original design made with
@@ -461,16 +462,16 @@
 
                 </div>
                 <!--end work-item-->
-                <div class="work__item--2">
+                <div class="work__item--2" data-filter="all" data-filter2="sass nodejs">
                     <div class="work__img-container">
-                        <img src="public/img/work-1.jpg" alt="work-1" class="work__img">
+                        <img src="public/img/glamoru.jpg" alt="work-1" class="work__img">
                     </div>
                     <div class="work__toggle">
 
                         <h2 class="heading--work u-block u-m-t-none">GlamourByCherry_v2</h2>
 
 
-                        <i class="fa fa-ellipsis-v"></i>
+                        <i class="fa fa-ellipsis-v work--toggle" data-show="2"></i>
 
                         <p class="work__description">
                             Upgrade of previous version with blog using
@@ -480,8 +481,8 @@
                     </div>
                     <!-- end TOGGLE-->
                     <!-- BEGINNING OVER OVERLAY -->
-                    <div class="work__img-overlay u-text-align-left">
-                        <i class="fa fa-close fa-2x u-bold-color work-fa-close"></i>
+                    <div class="work__img-overlay u-text-align-left" data-show="2">
+                        <i class="fa fa-close fa-2x u-bold-color work-fa-close work--toggle" data-show="2"></i>
                         <h2 class="heading--work">Accomplishments</h2>
                         <div class="work__overlay-accomplishments u-text-align-left">
                             <li class="work__list-text">
@@ -524,16 +525,16 @@
                 </div>
                 <!--end work-item-->
 
-                <div class="work__item--2">
+                <div class="work__item--2" data-filter="all" data-filter2="nodejs javascript">
                     <div class="work__img-container">
-                        <img src="public/img/work-1.jpg" alt="work-1" class="work__img">
+                        <img src="public/img/yelpcamp-min.jpg" alt="work-1" class="work__img">
                     </div>
                     <div class="work__toggle">
 
                         <h2 class="heading--work u-block u-m-t-none">YelpCamp</h2>
 
 
-                        <i class="fa fa-ellipsis-v"></i>
+                        <i class="fa fa-ellipsis-v work--toggle" data-show="3"></i>
 
                         <p class="work__description">
                             YelpCamp is a project following RESTful / CRUD convention to allow users to create posts
@@ -542,8 +543,8 @@
                     </div>
                     <!-- end TOGGLE-->
                     <!-- BEGINNING OVER OVERLAY -->
-                    <div class="work__img-overlay u-text-align-left">
-                        <i class="fa fa-close fa-2x u-bold-color work-fa-close"></i>
+                    <div class="work__img-overlay u-text-align-left" data-show="3">
+                        <i class="fa fa-close fa-2x u-bold-color work-fa-close work--toggle" data-show="3"></i>
                         <h2 class="heading--work">Accomplishments</h2>
                         <div class="work__overlay-accomplishments u-text-align-left">
                             <li class="work__list-text">
@@ -581,16 +582,16 @@
 
                 </div>
                 <!--end work-item-->
-                <div class="work__item--2">
+                <div class="work__item--2" data-filter="all" data-filter2="sass">
                     <div class="work__img-container">
-                        <img src="public/img/work-1.jpg" alt="work-1" class="work__img">
+                        <img src="public/img/portfolio-min.jpg" alt="work-1" class="work__img">
                     </div>
                     <div class="work__toggle">
 
                         <h2 class="heading--work u-block u-m-t-none">Portfolio Website </h2>
 
 
-                        <i class="fa fa-ellipsis-v"></i>
+                        <i class="fa fa-ellipsis-v work--toggle" data-show="4"></i>
 
                         <p class="work__description">
                             Portfolio site (this site) designed and developed by James Chhun
@@ -599,8 +600,8 @@
                     </div>
                     <!-- end TOGGLE-->
                     <!-- BEGINNING OVER OVERLAY -->
-                    <div class="work__img-overlay u-text-align-left">
-                        <i class="fa fa-close fa-2x u-bold-color work-fa-close"></i>
+                    <div class="work__img-overlay u-text-align-left" data-show="4">
+                        <i class="fa fa-close fa-2x u-bold-color work-fa-close work--toggle" data-show="4"></i>
                         <h2 class="heading--work">Accomplishments</h2>
                         <div class="work__overlay-accomplishments u-text-align-left">
                             <li class="work__list-text">Original design made with
@@ -637,16 +638,16 @@
 
                 </div>
                 <!--end work-item-->
-                <div class="work__item--2">
+                <div class="work__item--2" data-filter="all" data-filter2="">
                     <div class="work__img-container">
-                        <img src="public/img/work-1.jpg" alt="work-1" class="work__img">
+                        <img src="public/img/portfolioOld-min.jpg" alt="work-1" class="work__img">
                     </div>
                     <div class="work__toggle">
 
                         <h2 class="heading--work u-block u-m-t-none">Portfolio Website(old)</h2>
 
 
-                        <i class="fa fa-ellipsis-v"></i>
+                        <i class="fa fa-ellipsis-v work--toggle" data-show="5"></i>
 
                         <p class="work__description">
                             Previous version of James Chhun's portfolio website.
@@ -655,8 +656,8 @@
                     </div>
                     <!-- end TOGGLE-->
                     <!-- BEGINNING OVER OVERLAY -->
-                    <div class="work__img-overlay u-text-align-left">
-                        <i class="fa fa-close fa-2x u-bold-color work-fa-close"></i>
+                    <div class="work__img-overlay u-text-align-left" data-show="5">
+                        <i class="fa fa-close fa-2x u-bold-color work-fa-close work--toggle" data-show="5"></i>
                         <h2 class="heading--work">Accomplishments</h2>
                         <div class="work__overlay-accomplishments u-text-align-left">
                             <li class="work__list-text">
@@ -676,29 +677,30 @@
                         <br>
 
                         <div class="work__overlay-links">
-                            <a href="https://wingchhun.github.io/james_portfolio_final.github.io/" class="work__link">
+                            <a href="https://jameschhun.herokuapp.com" class="work__link">
                                 <i class="fa fa-external-link"></i>
                             </a>
-                            <a href="https://github.com/WingChhun/james_portfolio_final.github.io" class="work__link">
+
+
+                            <a href="https://github.com/WingChhun/OneTree.github.io" class="work__link">
                                 <i class="fa fa-github"></i>
                             </a>
-
                         </div>
                     </div>
                     <!-- END OF OVERLAY -->
 
                 </div>
                 <!--end work-item-->
-                <div class="work__item--2">
+                <div class="work__item--2" data-filter="all" data-filter2="">
                     <div class="work__img-container">
-                        <img src="public/img/work-1.jpg" alt="work-1" class="work__img">
+                        <img src="public/img/onetree-min.jpg" alt="work-1" class="work__img">
                     </div>
                     <div class="work__toggle">
 
                         <h2 class="heading--work u-block u-m-t-none">OneTree Landing Page</h2>
 
 
-                        <i class="fa fa-ellipsis-v"></i>
+                        <i class="fa fa-ellipsis-v work--toggle" data-show="6"></i>
 
                         <p class="work__description">
                             Landing page for a fictional company focused on raising awareness towards the environment
@@ -707,8 +709,8 @@
                     </div>
                     <!-- end TOGGLE-->
                     <!-- BEGINNING OVER OVERLAY -->
-                    <div class="work__img-overlay u-text-align-left">
-                        <i class="fa fa-close fa-2x u-bold-color work-fa-close"></i>
+                    <div class="work__img-overlay u-text-align-left" data-show="6">
+                        <i class="fa fa-close fa-2x u-bold-color work-fa-close work--toggle" data-show="6"></i>
                         <h2 class="heading--work">Accomplishments</h2>
                         <div class="work__overlay-accomplishments u-text-align-left">
                             <li class="work__list-text">
@@ -741,16 +743,16 @@
 
                 </div>
                 <!--end work-item-->
-                <div class="work__item--2">
+                <div class="work__item--2" data-filter="all" data-filter2="">
                     <div class="work__img-container">
-                        <img src="public/img/work-1.jpg" alt="work-1" class="work__img">
+                        <img src="public/img/orangerabiit-min.jpg" alt="work-1" class="work__img">
                     </div>
                     <div class="work__toggle">
 
                         <h2 class="heading--work u-block u-m-t-none">OrangeRabbit</h2>
 
 
-                        <i class="fa fa-ellipsis-v"></i>
+                        <i class="fa fa-ellipsis-v work--toggle" data-show="7"></i>
 
                         <p class="work__description">
                             Landing page for a fictional compan, Orange Rabbit, designed by Jake Blatt.
@@ -759,44 +761,45 @@
                     </div>
                     <!-- end TOGGLE-->
                     <!-- BEGINNING OVER OVERLAY -->
-                    <div class="work__img-overlay u-text-align-left">
-                        <i class="fa fa-close fa-2x u-bold-color work-fa-close"></i>
-                        <h2 class="heading--work">Accomplishments</h2>
-                        <div class="work__overlay-accomplishments u-text-align-left">
-                            <li class="work__list-text">
+                    <div class="work__img-overlay u-text-align-left" data-show="7">
+                        < class="fa fa-close fa-2x u-bold-color work-fa-close work--toggle" data-show="7">
+                            </i>
+                            <h2 class="heading--work">Accomplishments</h2>
+                            <div class="work__overlay-accomplishments u-text-align-left">
+                                <li class="work__list-text">
 
-                                <span class="u-bold-primary">PSD to HTML</span>
-                            </li>
-                            <li class="work__list-text">
-                                Grabbed assets using
-                                <span class="u-bold-primary">Photoshop</span>
-                            </li>
-                            <li class="work__list-text">
-                                Responsive
+                                    <span class="u-bold-primary">PSD to HTML</span>
+                                </li>
+                                <li class="work__list-text">
+                                    Grabbed assets using
+                                    <span class="u-bold-primary">Photoshop</span>
+                                </li>
+                                <li class="work__list-text">
+                                    Responsive
 
-                            </li>
-                            <li class="work__list-text">
-                                Developed using
-                                <span class="u-bold-primary">HTML5, CSS3</span>
-                            </li>
+                                </li>
+                                <li class="work__list-text">
+                                    Developed using
+                                    <span class="u-bold-primary">HTML5, CSS3</span>
+                                </li>
 
-                            <li class="work__list-text">
-                                Deployed via
-                                <span class="u-bold-primary">Github-pages</span>
-                            </li>
-                        </div>
+                                <li class="work__list-text">
+                                    Deployed via
+                                    <span class="u-bold-primary">Github-pages</span>
+                                </li>
+                            </div>
 
-                        <br>
-                        <hr>
-                        <div class="work__overlay-links">
-                            <a href="" class="work__link">
-                                <i class="fa fa-external-link"></i>
-                            </a>
-                            <a href="" class="work__link">
-                                <i class="fa fa-github"></i>
-                            </a>
+                            <br>
+                            <hr>
+                            <div class="work__overlay-links">
+                                <a href="" class="work__link">
+                                    <i class="fa fa-external-link"></i>
+                                </a>
+                                <a href="" class="work__link">
+                                    <i class="fa fa-github"></i>
+                                </a>
 
-                        </div>
+                            </div>
                     </div>
                     <!-- END OF OVERLAY -->
 
@@ -829,7 +832,7 @@
 </main>
 
 <footer class="footer">
-    <a href="#" class="footer__arrow">
+    <a href="#home" class="footer__arrow">
         <i class="fa fa-angle-double-up"></i>
     </a>
     <div class="footer__container">
@@ -856,6 +859,7 @@
 <!-- include scripts -->
 <script src="public/vendors/js/jquery-3.2.1.min.js"></script>
 <script src="public/vendors/js/jquery.waypoints.min.js"></script>
+<script src="public/js/jquery-ui.min.js"></script>
 <script src="public/js/jquery.scrollTo.min.js"></script>
 <script src="public/js/jquery.localScroll.min.js"></script>
 <script src="public/js/main.js"></script>

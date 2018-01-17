@@ -1483,11 +1483,10 @@ body {
         font-size: 2.4rem;
         width: 60%; } }
     .btn--main:hover {
-      padding: .8rem 2.6rem;
+      padding: .8rem 1.5rem;
       background-color: #1b242f;
       font-size: 3.25rem;
       border-color: #000;
-      color: #3CBBB1;
       font-weight: 700; }
       .btn--main:hover .fa-angle-double-down {
         transform: rotate(0deg); }
@@ -1921,7 +1920,8 @@ body {
   max-width: 114rem;
   margin: 2rem auto;
   padding: 2rem;
-  min-height: 800px; }
+  min-height: 800px;
+  overflow: hidden; }
   .work__text {
     min-height: 10rem;
     margin: 5rem auto;
@@ -2013,16 +2013,24 @@ body {
     transform: translate(-50%, -50%);
     z-index: 2;
     background-color: #fff;
-    height: 425px;
     width: 100%;
     transition: .4s ease;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    display: none;
     visibility: hidden;
+    height: 100px;
     opacity: 0; }
+    .work__img-overlay.hidden {
+      display: none;
+      visibility: hidden;
+      opacity: 0; }
+    .work__img-overlay.active {
+      display: flex;
+      visibility: visible;
+      opacity: 1;
+      height: 425px; }
   .work__img {
     object-fit: cover;
     width: 100%;

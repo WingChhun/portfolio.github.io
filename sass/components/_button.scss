@@ -22,11 +22,11 @@
             width:60%;
         }
         &:hover {
-            padding: .8rem 2.6rem;
+            padding: .8rem 1.5rem;
             background-color: $color-background-black; //          border-radius: 2.5rem;
             font-size: 3.25rem;
             border-color: $color-black;
-            color: $color-primary;
+        
             font-weight: 700;
             .fa-angle-double-down {
                 transform: rotate(0deg);

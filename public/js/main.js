@@ -3,18 +3,24 @@ var nav = document.querySelector('.nav');
 var topOfNav = nav.offsetTop;
 $(document).ready(function () {
 
-    $(".header__container").localScroll();
-    $(".nav").localScroll();
+
     init(); //run function init
 });
 
 function init() {
+    smoothScrolling();
     scrollAndSpinner();
     fixNav();
     waypointAnimations();
     toggleNav();
+    filterWork();
 }
 
+function smoothScrolling() {
+    $(".header__container").localScroll();
+    $(".nav").localScroll();
+    $(".footer").localScroll();
+}
 
 function scrollAndSpinner() {
 
@@ -153,17 +159,16 @@ function toggleNav() {
             console.log("help");
             $navContainer.removeClass("fadeInDown");
             $navContainer.addClass("fadeOut");
-            setTimeout(function()
-        {
-            $navContainer.css("display", "none")
-            $navContainer.css("visibility", "hidden");
+            setTimeout(function () {
+                $navContainer.css("display", "none");
+                $navContainer.css("visibility", "hidden");
 
-        },300);
-          
+            }, 300);
+
 
 
         }
-     
+
     });
 }
 
@@ -187,4 +192,32 @@ function fixNav() {
         document.body.style.paddingTop = 0;
 
     }
+}
+/*
+function filterWork()
+-When user clicks a filter category, remove class active from all, add class to selected
+-After clicked, grab all projects with the class matching the filer and change display/opacity 
+
+*/
+function filterWork() {
+
+    var $toggle = $(".work--toggle"),
+        $overlay = $(".work__img-overlay"),
+        $toggle2 = $(".work-fa-close");
+
+    $toggle.click(function () {
+        console.log("Clickedd work-toggle-overlay");
+        var dataShow = $(this).data("show");
+        console.log("data-show " + dataShow);
+        $overlay.each(function () {
+            if ($(this).data("show") == dataShow) {
+console.log("hello");
+                $(this).toggleClass("active", 400);
+
+            } else {
+
+            }
+        });
+
+    }); //end filterWork
 }
