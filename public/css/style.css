@@ -1120,13 +1120,12 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   overflow-y: scroll !important;
   /*
     @include respond(tab-port) {
         padding: 0; //remove header apdding at 900 breakpoint
-    }*/
-  overflow: auto; }
+    }*/ }
 
 html {
   box-sizing: border-box;
@@ -1548,7 +1547,19 @@ body {
       border: 3px solid #FF7700; }
     @media only screen and (max-width: 30em) {
       .btn--contact {
-        max-width: 70%; } }
+        max-width: 70%;
+        display: block;
+        flex: 1 0 20%;
+        max-width: 40%;
+        margin: 0 auto;
+        background-color: white;
+        padding: 2rem;
+        font-size: 1.8rem;
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+        outline: 0;
+        border: 3px solid #3CBBB1;
+        transition: all .3s ease; } }
 
 .bg-video {
   position: absolute;

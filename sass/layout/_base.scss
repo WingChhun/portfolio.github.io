@@ -10,17 +10,18 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0; // STOP MOVING AROUND!
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     overflow-y: scroll !important;
     /*
     @include respond(tab-port) {
         padding: 0; //remove header apdding at 900 breakpoint
     }*/
-    overflow: auto;
+ 
 }
 
 html {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+
 }
