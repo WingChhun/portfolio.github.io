@@ -68,6 +68,7 @@
     &__download-container {
         //border: $//border-test;
         width: 30%;
+      
         display: flex;
         margin: 0 auto;
         text-align: center;
@@ -94,6 +95,10 @@
             padding: 2rem 0;
             background-color: $color-background-black;
             &:last-child {}
+            @include respond(phone-landscape)
+            {
+                padding:1.25rem 0;
+            }
         }
         & a {
             text-decoration: none;
@@ -107,7 +112,7 @@
             }
             @include respond(phone-large) {
                 font-size: 2.2rem;
-                padding: 2rem 2.5rem;
+                padding: 2.5rem 6rem;
             }
         }
         & a .fa-code {

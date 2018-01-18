@@ -1120,10 +1120,13 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll !important;
   /*
     @include respond(tab-port) {
         padding: 0; //remove header apdding at 900 breakpoint
-    }*/ }
+    }*/
+  overflow: auto; }
 
 html {
   box-sizing: border-box;
@@ -1485,7 +1488,7 @@ body {
     .btn--main:hover {
       padding: .8rem 1.5rem;
       background-color: #1b242f;
-      font-size: 3.25rem;
+      font-size: 3rem;
       border-color: #000;
       font-weight: 700; }
       .btn--main:hover .fa-angle-double-down {
@@ -1495,10 +1498,10 @@ body {
     color: #f1f0ee;
     display: flex;
     justify-content: space-between;
-    width: 45%;
+    width: 80%;
     margin: 0 auto;
     padding: .6rem 1rem;
-    border-radius: 25px;
+    border-radius: 8px;
     border: 3px solid #3CBBB1;
     display: block;
     align-self: center;
@@ -1525,9 +1528,27 @@ body {
     .btn--download .fa-download {
       padding-right: 1rem; }
     .btn--download:hover {
-      width: 30%;
       background-color: rgba(60, 187, 177, 0.6);
       color: #1b242f; }
+  .btn--contact {
+    display: block;
+    flex: 1 0 20%;
+    max-width: 40%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    font-size: 1.8rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    outline: 0;
+    border: 3px solid #3CBBB1;
+    transition: all .3s ease; }
+    .btn--contact:hover {
+      outline: 0;
+      border: 3px solid #FF7700; }
+    @media only screen and (max-width: 30em) {
+      .btn--contact {
+        max-width: 70%; } }
 
 .bg-video {
   position: absolute;
@@ -1642,6 +1663,9 @@ body {
         margin: 0;
         padding: 2rem 0;
         background-color: #1b242f; } }
+  @media only screen and (max-width: 49em) and (max-width: 46.25em) and (orientation: landscape) {
+    .nav__item {
+      padding: 1.25rem 0; } }
     .nav__item a {
       text-decoration: none;
       font-size: 2rem;
@@ -1654,7 +1678,7 @@ body {
       @media only screen and (max-width: 49em) {
         .nav__item a {
           font-size: 2.2rem;
-          padding: 2rem 2.5rem; } }
+          padding: 2.5rem 6rem; } }
     .nav__item a .fa-code {
       font-size: 200%;
       margin: 0 auto;
@@ -1763,16 +1787,23 @@ body {
     @media only screen and (max-width: 30em) {
       .about--2 {
         min-height: 500px;
-        margin-top: 55rem; } }
+        margin-top: 55rem;
+        margin-bottom: 8rem; } }
   .about__column--1 {
     height: 775px;
     -webkit-animation-duration: .6s ease; }
     @media only screen and (max-width: 49em) {
       .about__column--1 {
         margin-bottom: 4rem; } }
+    @media only screen and (max-width: 30em) {
+      .about__column--1 {
+        margin-bottom: 8rem; } }
   .about__column--2 {
     height: 775px;
     -webkit-animation-duration: .6s ease; }
+    @media only screen and (max-width: 30em) {
+      .about__column--2 {
+        margin-bottom: 8rem; } }
   .about__profile-container {
     display: flex;
     flex-direction: row;
@@ -2121,26 +2152,6 @@ body {
     padding: 1rem;
     margin-top: 4rem;
     font-size: 1.8rem; }
-
-.btn--contact {
-  display: block;
-  flex: 1 0 20%;
-  max-width: 40%;
-  margin: 0 auto;
-  background-color: white;
-  padding: 2rem;
-  font-size: 1.8rem;
-  letter-spacing: .2rem;
-  text-transform: uppercase;
-  outline: 0;
-  border: 3px solid #3CBBB1;
-  transition: all .3s ease; }
-  .btn--contact:hover {
-    outline: 0;
-    border: 3px solid #FF7700; }
-  @media only screen and (max-width: 30em) {
-    .btn--contact {
-      max-width: 70%; } }
 
 .footer {
   -webkit-animation-duration: .8s; }

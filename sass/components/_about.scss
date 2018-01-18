@@ -10,10 +10,11 @@
         //for other ksills
         min-height: 300px;
         margin: 3rem auto;
-      opacity:0;
+        opacity: 0;
         @include respond(phone) {
             min-height: 500px;
             margin-top: 55rem;
+            margin-bottom: 8rem;
         }
     }
     &__column {
@@ -21,15 +22,20 @@
             //box-shadow: $//box-shadow-secondary;
             height: 775px;
             -webkit-animation-duration: .6s ease;
-            @include respond(phone-large)
-            {
-                margin-bottom:4rem;
+            @include respond(phone-large) {
+                margin-bottom: 4rem;
+            }
+            @include respond(phone) {
+                margin-bottom: 8rem;
             }
         }
         &--2 {
             //box-shadow: $//box-shadow-secondary;
             height: 775px;
             -webkit-animation-duration: .6s ease;
+            @include respond(phone) {
+                margin-bottom: 8rem;
+            }
         }
     }
     &__profile-container {

@@ -20,6 +20,8 @@ function smoothScrolling() {
     $(".header__container").localScroll();
     $(".nav").localScroll();
     $(".footer").localScroll();
+
+
 }
 
 function scrollAndSpinner() {
@@ -137,17 +139,26 @@ function waypointAnimations() {
 function toggleNav() {
     var $toggle = $('.nav__toggle'),
         $navContainer = $(".nav__navigation-container"),
+        $navItem = $(".nav__click"),
         $navDownload = $("nav__download-container");
     $navContainer.addClass("animated");
-    $toggle.click(function () {
+    $navItem.click(function () {
+
+    });
+    $toggle.click(hideNavContainer); //end toggle click
+    console.log(window.innerWidth);
+    var windowWidth = window.innerwidth;
+    if ($(document).width() < 785) {
+        //ensure responsive size wherre toggle shows
+        console.log("small " + $(document).width());
+        console.log("hello");
+        $navItem.click(hideNavContainer);
+    }
+
+
+    function hideNavContainer() {
+        console.log($navItem);
         //show menu
-
-
-
-
-
-
-
         if ($navContainer.css("display") == "none") {
 
             $navContainer.removeClass("animated fadeOut");
@@ -156,21 +167,18 @@ function toggleNav() {
             $navContainer.css("visibility", "visible");
 
         } else if ($navContainer.css('display') == 'flex') {
-            console.log("help");
+
             $navContainer.removeClass("fadeInDown");
             $navContainer.addClass("fadeOut");
             setTimeout(function () {
                 $navContainer.css("display", "none");
                 $navContainer.css("visibility", "hidden");
 
-            }, 300);
-
-
-
+            }, 300); //end else if
+            //fun new click function
         }
-
-    });
-}
+    } //end function hide nav container
+} //end function toggleNav
 
 
 
@@ -211,7 +219,7 @@ function filterWork() {
         console.log("data-show " + dataShow);
         $overlay.each(function () {
             if ($(this).data("show") == dataShow) {
-console.log("hello");
+                console.log("hello");
                 $(this).toggleClass("active", 400);
 
             } else {

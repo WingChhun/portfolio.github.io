@@ -1,5 +1,3 @@
-
-
 *,
 *::after,
 *::before {
@@ -7,20 +5,22 @@
     padding: 0;
     box-sizing: inherit;
 }
+
 body {
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
+    margin: 0; // STOP MOVING AROUND!
+    overflow-x: hidden;
+    overflow-y: scroll !important;
     /*
     @include respond(tab-port) {
         padding: 0; //remove header apdding at 900 breakpoint
     }*/
-
+    overflow: auto;
 }
-html
-{
+
+html {
     box-sizing: border-box;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
-

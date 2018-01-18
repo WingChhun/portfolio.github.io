@@ -8,17 +8,16 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
- opacity:0;
- -webkit-animation-duration: .8s;
+    opacity: 0;
+    -webkit-animation-duration: .8s;
     @include respond(tab-port) {
         max-width: $grid-width-med;
     }
     @include respond(phone) {
         max-width: 95%;
     }
-    @include respond(phone-landscape)
-    {
-        max-width:95%;
+    @include respond(phone-landscape) {
+        max-width: 95%;
     }
     &__input {
         padding: 1.4rem 2rem;
@@ -54,28 +53,5 @@
         padding: 1rem;
         margin-top: 4rem;
         font-size: 1.8rem;
-    }
-}
-
-.btn--contact {
-    display: block;
-    flex: 1 0 20%;
-    max-width: 40%;
-    margin: 0 auto;
-    background-color: white;
-    padding: 2rem;
-    font-size: 1.8rem;
-    letter-spacing: .2rem;
-    text-transform: uppercase;
-    outline: 0;
-    border: 3px solid $color-primary;
-    transition: all .3s ease;
-    &:hover {
-        outline: 0;
-        border: 3px solid $color-tertiary;
-    }
-    @include respond(phone)
-    {
-        max-width:70%;
     }
 }
