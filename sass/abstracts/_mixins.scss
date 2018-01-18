@@ -44,7 +44,7 @@ MEDIA QUERIES MIXINS
 @mixin respond($breakpoint) {
     @if $breakpoint==phone-small {
         @media only screen and (min-width: 20em) and (max-width:29em) {
-            @content
+        @content
         }
     }
     ; // MIN-width 320px < 480px
