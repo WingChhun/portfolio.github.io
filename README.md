@@ -31,6 +31,13 @@ https://wingchhun.github.io/portfolio.github.io//
 
 jameschhun.com (both go to same site)
 
+# More Links Mentioned:
+
+ - Further Links that were mentioned / not included:
+  - https://www.hackerrank.com/chhunjamesdc2
+  - https://www.codewars.com/users/WingChhun
+ - https://github.com/WingChhun
+ - https://www.linkedin.com/in/james-chhun-16b1b5120/
 # Notes
  - Application was built using VS Code text-ediro
  - Built with HTML, CSS, SASS, Javascript, jQuery
